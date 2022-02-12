@@ -1,8 +1,12 @@
+# urllib is built-in. No need to have it in the requirements.txt
+# python3 app.py
+
 from __future__ import absolute_import
 
 import json
 import os
 from urllib.parse import urlparse
+
 
 from flask import Flask, render_template, request, redirect, session
 from flask_sslify import SSLify
@@ -230,4 +234,4 @@ def get_redirect_uri(request):
 
 if __name__ == '__main__':
     app.debug = os.environ.get('FLASK_DEBUG', True)
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='127.0.0.1', port=5000)
