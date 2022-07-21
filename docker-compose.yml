@@ -1,0 +1,8 @@
+version: '3.7'
+services: 
+ python-app:
+   container_name: python
+   build: .
+   image: uber:1.0
+   ports:
+    - 7000:7000
