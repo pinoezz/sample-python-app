@@ -3,7 +3,7 @@ RUN mkdir /app
 WORKDIR /app
 COPY requirements.txt /app
 COPY . .
-RUN export UBER_CLIENT_ID="{jQoKhy4oW2GN-9WGjJbeZBAPy-ThmZ8d}"&&export UBER_CLIENT_SECRET="{o8EQ8k64OGfnN8T5dO0mZu-MjiY5RzajpljCgjKW}"
+RUN export UBER_CLIENT_ID="{TvvTAzYa89QF3rSQl-YHZf0PDGDmQ0ee}"&&export UBER_CLIENT_SECRET="{sSGE9KVlC7KdV0icNYDfdfim6nOCtLsq5P_rhTBA}"
 RUN pip install -r requirements.txt
 EXPOSE 7000
 CMD [ "python", "app.py" ]
