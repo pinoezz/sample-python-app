@@ -18,10 +18,5 @@ node{
       stage('Set k8s-context') {
          sh "kubectl config use-context ${k8s_config_dev}"
       }
-      stage('Pull Helm Path') {
-         dir('../oca-infra/'){
-            sh "git pull origin master"
-         }
     }
- 
 }
