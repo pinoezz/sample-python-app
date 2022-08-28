@@ -18,5 +18,4 @@ node{
       stage('Set k8s-context') {
          sh "kubectl config use-context ${k8s_config_dev}"
       }
-    }
-}
+ 
